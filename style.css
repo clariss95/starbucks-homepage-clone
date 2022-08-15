@@ -1,323 +1,363 @@
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
-    * {
-        box-sizing: border-box;
-    }
-    
-     :root {
-        --hover-green: #00754a;
-        --basic-black: black;
-        --basic-white: white;
-        --mint: #d4e9e2;
-        --dark-green-font: #1e3932;
-        --shading: #27433b16;
-        --shading2: #080e0db5;
-        --shading3: #4a4a4a1e;
-        --shading4: #a8a2a239;
-        --pink-bg: #fa91aa;
-        --neon-mint-bg: #9bf5b4;
-        --dark-green-bg: #007042;
-    }
-    
-    body {
-        padding: 0;
-        margin: 0;
-        color: var(--basic-black);
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 700;
-    }
-    
-    .menu {
-        width: 100%;
-        display: flex;
-        align-items: center;
-    }
-    
-    li {
-        list-style: none;
-        display: inline;
-        padding: 50px 30px 10px 0px;
-    }
-    
-    ul {
-        padding-left: 25px;
-    }
-    
-    .logo {
-        padding: 20px 10px 10px 40px;
-        display: flex;
-        align-items: center;
-    }
-    
-    .menu a {
-        text-transform: uppercase;
-        text-decoration: none;
-        color: var(--basic-black);
-    }
-    
-    .menu a:hover {
-        color: var(--hover-green)
-    }
-    
-    .menu_wrapper {
-        display: flex;
-        flex-direction: row;
-        height: 100px;
-        box-shadow: 0 4px 6px -6px #222;
-        width: 100%;
-        font-size: 14px;
-    }
-    
-    .location {
-        display: flex;
-        flex-basis: 48%;
-        align-items: center;
-        justify-content: flex-end;
-        padding-right: 40px;
-    }
-    
-    .location a {
-        text-decoration: none;
-        padding-right: 30px;
-    }
-    
-    .area svg {
-        padding-right: 10px;
-        padding-bottom: 8px;
-    }
-    
-    .area {
-        display: flex;
-        align-content: center;
-    }
-    
-    .area:hover {
-        color: var(--hover-green);
-        fill: var(--hover-green);
-    }
-    
-    .btn1 {
-        border-radius: 50px;
-        padding: 8px 20px;
-        margin: 25px 10px;
-        border: 1px solid var(--basic-black);
-        font-weight: 600;
-        display: flex;
-        align-content: center;
-    }
-    
-    .sign {
-        background-color: var(--basic-white)
-    }
-    
-    .sign:hover {
-        background-color: var(--shading3);
-    }
-    
-    .join {
-        background-color: var(--basic-black);
-        color: var(--basic-white);
-    }
-    
-    .join:hover {
-        background-color: var(--shading2);
-    }
-    
-    .intro_points {
-        display: flex;
-        background-color: var(--mint);
-        color: var(--dark-green-font);
-        margin-top: 40px;
-    }
-    
-    .points {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 50%;
-        flex-basis: 50%;
-        align-items: center;
-        padding-top: 20px;
-        text-align: center;
-    }
-    
-    .points h1 {
-        font-size: 24px;
-    }
-    
-    .points h2 {
-        font-size: 19px;
-        font-weight: 400;
-        padding: 20px 90px;
-    }
-    
-    .illustration1 {
-        display: flex;
-        flex-grow: 50%;
-        flex-basis: 50%;
-    }
-    
-    .illustration1 img {
-        max-width: 100%;
-        height: 90%;
-    }
-    
-    .join-now {
-        background-color: var(--mint);
-        color: var(--dark-green-font);
-        border-color: var(--dark-green-font);
-        font-size: 16px;
-    }
-    
-    .join-now:hover {
-        background-color: var(--shading)
-    }
-    
-    .featured_drinks {
-        display: flex;
-        background-color: var(--pink-bg);
-        color: var(--dark-green-font);
-        margin-top: 40px;
-    }
-    
-    .drink {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 50%;
-        flex-basis: 50%;
-    }
-    
-    .drink img {
-        max-width: 100%;
-        height: auto;
-    }
-    
-    .drink_text {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 50%;
-        flex-basis: 50%;
-        align-items: center;
-        color: var(--dark-green-font);
-        padding: 20px 120px;
-        text-align: center;
-    }
-    
-    .drink_text h1 {
-        font-size: 50px;
-    }
-    
-    .drink_text h2 {
-        font-size: 24px;
-        font-weight: 400;
-    }
-    
-    .learn {
-        color: var(--dark-green-font);
-        background-color: var(--pink-bg);
-        font-size: 16px;
-        border-color: var(--dark-green-font);
-    }
-    
-    .learn:hover {
-        background-color: var(--shading);
-    }
-    
-    .featured_food {
-        display: flex;
-        background-color: var(--neon-mint-bg);
-        color: var(--dark-green-font);
-        margin-top: 40px;
-    }
-    
-    .sandwich {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 50%;
-        flex-basis: 50%;
-    }
-    
-    .sandwich img {
-        max-width: 100%;
-        height: auto;
-    }
-    
-    .food_text {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 50%;
-        flex-basis: 50%;
-        align-items: center;
-        color: var(--dark-green-font);
-        padding: 150px 120px;
-        text-align: center;
-    }
-    
-    .food_text h1 {
-        font-size: 50px;
-        margin: 0;
-    }
-    
-    .food_text h2 {
-        font-size: 24px;
-        font-weight: 400;
-    }
-    
-    .order {
-        color: var(--dark-green-font);
-        background-color: var(--neon-mint-bg);
-        font-size: 16px;
-        border-color: var(--dark-green-font);
-    }
-    
-    .order:hover {
-        background-color: var(--shading);
-    }
-    
-    .featured_pastry {
-        display: flex;
-        background-color: var(--dark-green-bg);
-        color: var(--dark-green-font);
-        margin-top: 40px;
-    }
-    
-    .pastry {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 50%;
-        flex-basis: 50%;
-    }
-    
-    .pastry img {
-        max-width: 100%;
-        height: auto;
-    }
-    
-    .pastry_text {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 50%;
-        flex-basis: 50%;
-        align-items: center;
-        color: var(--basic-white);
-        padding: 88px 60px;
-        text-align: center;
-    }
-    
-    .pastry_text h1 {
-        font-size: 50px;
-    }
-    
-    .pastry_text h2 {
-        font-size: 24px;
-        font-weight: 400;
-    }
-    
-    .order-pastry {
-        color: var(--basic-white);
-        background-color: var(--dark-green-bg);
-        font-size: 16px;
-        border-color: var(--basic-white);
-    }
-    
-    .order-pastry:hover {
-        background-color: var(--shading4);
-    }
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+        * {
+            box-sizing: border-box;
+        }
+        
+         :root {
+            --hover-green: #00754a;
+            --basic-black: black;
+            --basic-white: white;
+            --mint: #d4e9e2;
+            --dark-green-font: #1e3932;
+            --shading: #27433b16;
+            --shading2: #080e0db5;
+            --shading3: #4a4a4a1e;
+            --shading4: #a8a2a239;
+            --pink-bg: #fa91aa;
+            --neon-mint-bg: #9bf5b4;
+            --dark-green-bg: #007042;
+            --grey-bg: #f4f3ee;
+            ;
+        }
+        
+         :root {
+            --font1: 24px;
+            --font2: 19;
+            --font-big: 50px;
+            --font-body: 16px;
+            --font-small: 14px;
+        }
+        
+        body {
+            padding: 0;
+            margin: 0;
+            color: var(--basic-black);
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+        }
+        
+        .menu {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        
+        li {
+            list-style: none;
+            display: inline;
+            padding: 50px 30px 10px 0px;
+        }
+        
+        ul {
+            padding-left: 25px;
+        }
+        
+        .logo {
+            padding: 20px 10px 10px 40px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .menu a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--basic-black);
+        }
+        
+        .menu a:hover {
+            color: var(--hover-green)
+        }
+        
+        .menu_wrapper {
+            display: flex;
+            flex-direction: row;
+            height: 100px;
+            box-shadow: 0 4px 6px -6px #222;
+            width: 100%;
+            font-size: 14px;
+        }
+        
+        .location {
+            display: flex;
+            flex-basis: 48%;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 40px;
+        }
+        
+        .location a {
+            text-decoration: none;
+            padding-right: 30px;
+        }
+        
+        .area svg {
+            padding-right: 10px;
+            padding-bottom: 8px;
+        }
+        
+        .area {
+            display: flex;
+            align-content: center;
+        }
+        
+        .area:hover {
+            color: var(--hover-green);
+            fill: var(--hover-green);
+        }
+        
+        .btn1 {
+            border-radius: 50px;
+            padding: 8px 20px;
+            margin: 25px 10px;
+            border: 1px solid var(--basic-black);
+            font-weight: 600;
+            display: flex;
+            align-content: center;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        
+        .sign {
+            font-size: 14px;
+        }
+        
+        .sign:hover {
+            background-color: var(--shading3);
+        }
+        
+        .join {
+            background-color: var(--basic-black);
+            color: var(--basic-white);
+        }
+        
+        .join:hover {
+            background-color: var(--shading2);
+        }
+        
+        .container {
+            display: flex;
+            background-color: var(--mint);
+            color: var(--dark-green-font);
+            margin-top: 40px;
+        }
+        
+        .col1 {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 50%;
+            flex-basis: 50%;
+            align-items: center;
+            padding-top: 20px;
+            text-align: center;
+        }
+        
+        .points h1 {
+            font-size: 24px;
+        }
+        
+        .points h2 {
+            font-size: 19px;
+            font-weight: 400;
+            padding: 20px 90px;
+        }
+        
+        .col2 {
+            display: flex;
+            flex-grow: 50%;
+            flex-basis: 50%;
+        }
+        
+        .illustration1 img {
+            max-width: 100%;
+            height: 90%;
+        }
+        
+        .btn-body {
+            color: var(--dark-green-font);
+            border-color: var(--dark-green-font);
+            font-size: var(--font-body);
+        }
+        
+        .join-now:hover {
+            background-color: var(--shading)
+        }
+        
+        .featured_drinks {
+            background-color: var(--pink-bg);
+            color: var(--dark-green-font);
+        }
+        
+        .drink img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .drink_text {
+            align-items: center;
+            color: var(--dark-green-font);
+            padding: 20px 120px;
+            text-align: center;
+        }
+        
+        .drink_text h1 {
+            font-size: var(--font-big);
+        }
+        
+        .drink_text h2 {
+            font-size: var(--font1);
+            font-weight: 400;
+        }
+        
+        .learn:hover {
+            background-color: var(--shading);
+        }
+        
+        .featured_food {
+            background-color: var(--neon-mint-bg);
+            color: var(--dark-green-font);
+        }
+        
+        .sandwich img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .food_text {
+            align-items: center;
+            color: var(--dark-green-font);
+            padding: 150px 120px;
+            text-align: center;
+        }
+        
+        .food_text h1 {
+            font-size: var(--font-big);
+            margin: 0;
+        }
+        
+        .food_text h2 {
+            font-size: var(--font1);
+            font-weight: 400;
+        }
+        
+        .order-food:hover {
+            background-color: var(--shading);
+        }
+        
+        .featured_pastry {
+            background-color: var(--dark-green-bg);
+            color: var(--dark-green-font);
+        }
+        
+        .pastry img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .pastry_text {
+            align-items: center;
+            color: var(--basic-white);
+            padding: 80px 60px;
+            text-align: center;
+        }
+        
+        .pastry_text h1 {
+            font-size: var(--font-big);
+        }
+        
+        .pastry_text h2 {
+            font-size: var(--font1);
+            font-weight: 400;
+        }
+        
+        .order-pastry {
+            color: var(--basic-white);
+            border-color: var(--basic-white);
+        }
+        
+        .order-pastry:hover {
+            background-color: var(--shading4);
+        }
+        
+        .sb_rewards {
+            background-color: var(--grey-bg);
+            color: var(--dark-green-font);
+        }
+        
+        .rewards img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .rewards_text {
+            align-items: center;
+            padding: 10px 150px;
+            text-align: center;
+        }
+        
+        .rewards_text h1 {
+            font-size: var(--font1);
+        }
+        
+        .rewards_text h2 {
+            font-size: var(--font2);
+            font-weight: 400;
+        }
+        
+        .sb-rew {
+            margin-top: 0;
+        }
+        
+        .sb-rew:hover {
+            background-color: var(--shading);
+        }
+        
+        .sb-hiring {
+            background-color: var(--mint);
+            color: var(--dark-green-font);
+        }
+        
+        .hiring img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .hiring_text {
+            align-items: center;
+            color: var(--dark-green-font);
+            padding: 80px 60px;
+            text-align: center;
+        }
+        
+        .hiring_text h1 {
+            font-size: var(--font1);
+            font-weight: 600;
+        }
+        
+        .hiring_text h2 {
+            font-size: var(--font2);
+            font-weight: 400;
+        }
+        
+        .hiring-btn:hover {
+            background-color: var(--shading);
+        }
+        
+        .conditions {
+            padding: 50px 20px;
+            background-color: var(--basic-white);
+            box-shadow: 0 4px 6px -6px #222;
+        }
+        
+        .conditions a {
+            color: var(--basic-black);
+        }
+        
+        .conditions p {
+            text-align: center;
+            font-size: var(--font-small);
+            font-weight: 400;
+        }
+        
+        .condition_2 {
+            margin-top: 100px;
+        }
